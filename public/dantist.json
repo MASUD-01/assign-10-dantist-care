@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Toothache ",
+        "Price": "$2000",
+        "img": "https://i.ibb.co/MkcwNWK/493x335-overview-of-toothaches-ref-guide.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Cosmetic Dentistry ",
+        "Price": "$2050",
+        "img": "https://i.ibb.co/RSsPY8t/110x70-teeth-whitening-video.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Dental Bonding",
+        "Price": "$5000",
+        "img": "https://i.ibb.co/SJGdnjx/493ss-thinkstock-rf-woman-sloshing-salt-water-in-mouth.jpg"
+    }
+]
