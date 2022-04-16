@@ -1,8 +1,13 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Service = ({ service }) => {
     const { name, Price, img } = service
+    const navigate = useNavigate()
+    const handledetails = () => {
+        navigate('/knowdetails')
+    }
     return (
         <div className='col-md-4 mx-auto'>
             <Card style={{ width: '18rem', margin: '0 auto' }}>
@@ -14,7 +19,7 @@ const Service = ({ service }) => {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                     </Card.Text>
-                    <Button variant="primary">Details</Button>
+                    <Button onClick={handledetails} variant="primary">Details</Button>
                 </Card.Body>
             </Card>
         </div>

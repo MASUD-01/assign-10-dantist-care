@@ -1,9 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const KnowDetails = () => {
+    const navigate = useNavigate()
+    const handlecheckouts = () => {
+        navigate('checkouts')
+    }
     return (
         <div>
-            this is know details
+            <h1>This is details about service</h1>
+            <button onClick={handlecheckouts} className='btn btn-primary'>Proceed Checkouts</button>
         </div>
     );
 };
