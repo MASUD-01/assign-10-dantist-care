@@ -7,7 +7,7 @@ const KnowDetails = () => {
         navigate('/checkouts')
     }
     return (
-        <div>
+        <div className='text-center'>
             <h1>This is details about service</h1>
             <button onClick={handlecheckouts} className='btn btn-primary'>Proceed Checkouts</button>
         </div>
