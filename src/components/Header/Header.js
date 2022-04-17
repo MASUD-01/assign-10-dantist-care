@@ -12,12 +12,12 @@ const Header = () => {
         signOut(auth)
     }
     return (
-        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" >
             <Container>
-                <Navbar.Brand as={Link} to="/home">Dantist Care</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/home" className='fs-1'>Dantist Care</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto fs-4" >
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                         <Nav.Link as={Link} to="/aboutme">About me</Nav.Link>

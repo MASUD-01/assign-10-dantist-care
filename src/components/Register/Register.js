@@ -1,8 +1,10 @@
 import React from 'react';
-import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Form } from 'react-bootstrap';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const navigate = useNavigate()
@@ -15,6 +17,10 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
+    const [updateProfile, updating, updateerror] = useUpdateProfile(auth);
+    if (loading || updating) {
+        return <Loading></Loading>
+    }
 
     const handleRegister = async (e) => {
         e.preventDefault();
@@ -22,6 +28,9 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         await createUserWithEmailAndPassword(email, password)
+        await updateProfile({ displayName: name });
+        console.log('Updated profile');
+        navigate('/home')
     }
     return (
         <div className='container mx-auto w-50'>
@@ -45,6 +54,7 @@ const Register = () => {
                 </Form.Group>
             </Form>
             <p>Already have an account? <Link to='/login' className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

@@ -1,0 +1,5 @@
+@media screen and (min-width: 480px) {
+    .about-div {
+        display: flex;
+    }
+}
