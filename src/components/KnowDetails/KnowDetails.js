@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const KnowDetails = () => {
     const navigate = useNavigate()
     const handlecheckouts = () => {
-        navigate('checkouts')
+        navigate('/checkouts')
     }
     return (
         <div>
