@@ -3,18 +3,21 @@
         "id": 1,
         "name": "Toothache ",
         "Price": "$2000",
-        "img": "https://i.ibb.co/MkcwNWK/493x335-overview-of-toothaches-ref-guide.jpg"
+        "img": "https://i.ibb.co/MkcwNWK/493x335-overview-of-toothaches-ref-guide.jpg",
+        "des": " If you notice swelling or pus around the tooth, or if you have a fever, that could be a sign that you have,"
     },
     {
         "id": 2,
         "name": "Cosmetic Dentistry ",
         "Price": "$2050",
-        "img": "https://i.ibb.co/RSsPY8t/110x70-teeth-whitening-video.jpg"
+        "img": "https://i.ibb.co/RSsPY8t/110x70-teeth-whitening-video.jpg",
+        "des": "Your teeth are like your laundry: The right approach will remove many stains. Foods, medications, tobacco"
     },
     {
         "id": 3,
         "name": "Dental Bonding",
         "Price": "$5000",
-        "img": "https://i.ibb.co/SJGdnjx/493ss-thinkstock-rf-woman-sloshing-salt-water-in-mouth.jpg"
+        "img": "https://i.ibb.co/SJGdnjx/493ss-thinkstock-rf-woman-sloshing-salt-water-in-mouth.jpg",
+        "des": " You get them when a sticky bacteria, called plaque, builds up on your teeth, slowly destroying"
     }
 ]
