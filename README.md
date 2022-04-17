@@ -4,7 +4,7 @@
 * Framework use in Bootstrap
 * use Firebase authentication
 * use React Router
-* this site is Doctors related
+* this site is Doctors services related
 
 
 
