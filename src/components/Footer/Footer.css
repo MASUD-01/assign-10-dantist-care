@@ -1,5 +1,7 @@
 @media screen and (max-width: 480px) {
-    .dantist {
+    .dantist p {
         padding: 0 !important;
+        text-align: center;
+        margin: auto;
     }
 }
