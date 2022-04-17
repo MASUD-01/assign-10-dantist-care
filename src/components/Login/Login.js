@@ -3,11 +3,15 @@ import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const navigateRegister = () => {
+        navigate('/register')
+    }
     const [
         signInWithEmailAndPassword,
         user,
@@ -16,6 +20,8 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
     const handleSubmit = (e) => {
         e.preventDefault();
+        navigate('/home')
+
     }
     const handleEmail = (e) => {
         setEmail(e.target.value)
@@ -42,6 +48,7 @@ const Login = () => {
                     Login
                 </Button>
             </Form>
+            <p>Create Dantist new User? <Link to='/register' className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
         </div>
     );
 };
