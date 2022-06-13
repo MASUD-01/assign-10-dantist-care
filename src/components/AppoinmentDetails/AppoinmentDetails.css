@@ -1,0 +1,108 @@
+.appoinment-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+    background-color: #f4f7f7;
+
+}
+
+.section1 {
+    flex: 1;
+    width: 100px;
+    flex: wrap;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.section2 {
+    flex: 1;
+    margin-top: -200px;
+    z-index: 10;
+    flex: wrap;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.card-heading {
+    background-color: rgb(71, 206, 236);
+    height: 100px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-data {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.form-data input {
+    height: 80px;
+    background-color: rgb(244 247 247);
+    text-align: center;
+    border: none;
+}
+
+.btnDetails {
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color: #ff8a8b;
+    border: none;
+}
+
+.cardDetailsMain {}
+
+.cardDetails {
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 400px) {
+
+    .section1,
+    .section2 {
+        flex: 100%;
+    }
+
+    .form-data {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .section1 {
+        margin-bottom: 200px;
+        margin-top: 30px;
+        padding: 25px;
+        background-color: #f4f7f7;
+    }
+
+    .section2 {
+        padding: 30px;
+        height: 1000px;
+
+    }
+
+    .card-heading {
+        padding: 20px;
+        color: white;
+    }
+
+    .appoinment-section {
+        background-color: #f4f7f7;
+        height: 1000px;
+
+    }
+
+    .cardDetailsMain {
+        height: 700px;
+    }
+}
