@@ -1,3 +1,18 @@
 .nav-text a {
+    color: black !important;
+}
+
+.image-size {
+    width: 100px;
+}
+
+.appoinment {
     color: white !important;
+    background-color: #ff8a8b;
+    border-radius: 30px;
+}
+
+.appoinment:hover {
+    background-color: #c68586;
+    transition: 1s;
 }
