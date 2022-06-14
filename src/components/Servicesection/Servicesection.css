@@ -1,0 +1,78 @@
+.cavity {
+    width: 80px;
+    margin: auto;
+    padding: 15px;
+    color: white;
+    border-radius: 50%;
+    background-color: #8c84dc;
+    margin-top: -15px;
+}
+
+.cardshadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+
+.cardshadow p:hover {
+    color: #f78da7;
+}
+
+.cardshadow Button:hover {
+    color: #f78da7;
+}
+
+.mainboss {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin-top: -150px;
+    margin-bottom: -150px;
+}
+
+.mainboss p {
+    font-size: 30px;
+}
+
+.mainboss span {
+    color: #969FA8;
+    font-size: 20px;
+}
+
+.maindiv {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.btnservice {
+    border: none;
+    margin-top: 30px;
+}
+
+.btnservice:hover {
+    color: #f78da7;
+}
+
+@media only screen and (max-width: 400px) {
+    .maindiv {
+        grid-template-columns: auto;
+        width: 300px;
+        margin-top: 30px;
+
+    }
+
+    .mainboss {
+        margin-top: 90px;
+        margin-bottom: 90px;
+        height: 100%;
+    }
+
+    .cardshadow {
+        margin: auto;
+    }
+}

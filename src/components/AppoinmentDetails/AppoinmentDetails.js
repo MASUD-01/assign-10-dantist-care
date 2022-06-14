@@ -6,11 +6,11 @@ const AppoinmentDetails = () => {
     return (
         <div className='appoinment-section'>
             <div className='section1'>
-                <div style={{ width: '400px' }}>
+                <div style={{ width: '485px', height: '300px' }}>
                     <span>Welcome to Dentist Care!</span>
-                    <h5>Welcome to a Family Dental Clinic</h5>
+                    <h5>Welcome to a Family <br /> Dental Clinic</h5>
                     <p>
-                        Professional dental clinic ProDent offers the whole range of dentistry services: treatment of caries, gum diseases, tooth whitening, implantation, dentures (crowns installation), surgery, occlusion correction (braces) etc. Our dentists will help you solve any dental problem painless and carefully
+                        Professional dental clinic ProDent offers the whole <br /> range of dentistry services: treatment of caries, gum diseases, tooth whitening, implantation, dentures (crowns installation), surgery, occlusion correction (braces) etc. Our dentists will help you solve any dental problem painless and carefully
                     </p>
                 </div>
             </div>

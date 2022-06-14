@@ -16,7 +16,7 @@ const Banner = () => {
 
         <Carousel fade>
             <Carousel.Item>
-                {/* <h1 className='banner text-white'><span className='display-1'>Clean</span> Your Teeth</h1> */}
+                <h1 className='banner'><span className='display-1'>Clean</span> Your Teeth</h1>
                 <img
                     className="d-block w-100"
                     src={banner3}
@@ -28,6 +28,7 @@ const Banner = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
+                <h1 className='banner'><span className='display-1'>Clean</span> Your Teeth</h1>
                 <img
                     className="d-block w-100"
                     src={banner1}
@@ -40,6 +41,7 @@ const Banner = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
+                <h1 className='banner'><span className='display-1'>Clean</span> Your Teeth</h1>
                 <img
                     className="d-block w-100"
                     src={banner2}
